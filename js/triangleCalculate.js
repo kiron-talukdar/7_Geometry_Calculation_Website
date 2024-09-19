@@ -1,4 +1,4 @@
-console.log("connected")
+// console.log("triangle")
 /*
 objective: get the base, and height of a triangle, 
 Calculate the area by using the provided formula. and then display the area.

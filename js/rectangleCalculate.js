@@ -16,9 +16,8 @@ const length=parseFloat(triangleLengthValue);
 
 // part 3
 const rectangleArea=(width * length);
-console.log(rectangleArea)
+// console.log(rectangleArea)
 
 const area = document.getElementById('rectangle-area');
-
 area.innerText=rectangleArea;
 }

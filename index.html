@@ -32,14 +32,16 @@
                         <h2 class="card-title">Triangle!</h2>
                         <p>Area = 0.5 X b X h </p>
                         <div>
-                            <input id="triangle-base" class="w-24 p-2 text-1.5xl rounded border-2 border-gray-700" type="text" placeholder="b">
+                            <input id="triangle-base" class="w-24 p-2 text-1.5xl rounded border-2 border-gray-700"
+                                type="text" placeholder="b">
                             <span>cm</span>
-                            <input id="triangle-height" class="w-24 p-2 text-1.5xl rounded border-2 border-gray-700" type="text" placeholder="h">
+                            <input id="triangle-height" class="w-24 p-2 text-1.5xl rounded border-2 border-gray-700"
+                                type="text" placeholder="h">
                             <span>cm</span>
                         </div>
 
                         <div>
-                            <p class="text-2xl">Area:  <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+                            <p class="text-2xl">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
                         </div>
 
                         <div class="card-actions ">
@@ -48,7 +50,7 @@
                     </div>
                 </div>
 
-                 <!--2 Rectangle cart -->
+                <!--2 Rectangle cart -->
 
                 <div class="card card-compact bg-base-100 w-90 shadow-xl p-5">
                     <figure>
@@ -56,16 +58,18 @@
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Rectangle!</h2>
-                        <p>Area = w  X  l </p>
+                        <p>Area = w X l </p>
                         <div>
-                            <input id="rectangle-width" class="w-24 p-2 text-1.5xl rounded border-2 border-gray-700" type="text" placeholder="w">
+                            <input id="rectangle-width" class="w-24 p-2 text-1.5xl rounded border-2 border-gray-700"
+                                type="text" placeholder="w">
                             <span>cm</span>
-                            <input id="triangle-length" class="w-24 p-2 text-1.5xl rounded border-2 border-gray-700" type="text" placeholder="l">
+                            <input id="triangle-length" class="w-24 p-2 text-1.5xl rounded border-2 border-gray-700"
+                                type="text" placeholder="l">
                             <span>cm</span>
                         </div>
 
                         <div>
-                            <p class="text-2xl">Area:  <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
+                            <p class="text-2xl">Area: <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
                         </div>
 
                         <div class="card-actions ">
@@ -73,20 +77,73 @@
                         </div>
                     </div>
                 </div>
-                <!-- ............ -->
+
+                <!--3 Parallelogram cart -->
 
                 <div class="card card-compact bg-base-100 w-90 shadow-xl p-5">
                     <figure>
-                        <img src="images/triangle.png" alt="Triangle" />
+                        <img src="images/parallelogram.png" alt="Parallelogram" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Triangle!</h2>
-                        <p>Area = 0.5 X b X h </p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title">Parallelogram!</h2>
+                        <p>Area = b X h </p>
+
+
+                        <div>
+                            <input id="parallelogram-base" class="w-24 p-2 text-1.5xl rounded border-2 border-gray-700"
+                                type="text" placeholder="b">
+                            <span>cm</span>
+                            <input id="parallelogram-height"
+                                class="w-24 p-2 text-1.5xl rounded border-2 border-gray-700" type="text"
+                                placeholder="h">
+                            <span>cm</span>
                         </div>
+
+                        <div>
+                            <p class="text-2xl">Area: <span id="parallelogram-area"></span> <span>cm<sup>2</sup></span>
+                            </p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+
                     </div>
                 </div>
+
+
+                <!--4 Rhombus cart -->
+
+                <div class="card card-compact bg-base-100 w-90 shadow-xl p-5">
+                    <figure>
+                        <img src="images/rhombus.png" alt="Rhombus" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Rhombus!</h2>
+                        <p>Area = 0.5 X d<sub>1</sub> X d <sub>2</sub> </p>
+
+
+                        <div>
+                            <input id="rhombus-d1" class="w-24 p-2 text-1.5xl rounded border-2 border-gray-700"
+                                type="text" placeholder="d1">
+                            <span>cm</span>
+                            <input id="rhombus-d2"
+                                class="w-24 p-2 text-1.5xl rounded border-2 border-gray-700" type="text"
+                                placeholder="d2">
+                            <span>cm</span>
+                        </div>
+
+                        <div>
+                            <p class="text-2xl">Area: <span id="rhombus-area"></span> <span>cm<sup>2</sup></span>
+                            </p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
                 <div class="card card-compact bg-base-100 w-90 shadow-xl p-5">
                     <figure>
                         <img src="images/triangle.png" alt="Triangle" />
@@ -110,6 +167,8 @@
 
     <script src="js/triangleCalculate.js"></script>
     <script src="js/rectangleCalculate.js"></script>
+    <script src="js/parallelogram.js"></script>
+    <script src="js/rhombusCalculate.js"></script>
 </body>
 
 </html>
