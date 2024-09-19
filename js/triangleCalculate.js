@@ -31,6 +31,8 @@ function calculateTriangleArea(){
     const height=parseFloat(hValue);
     // console.log(height);
     
+// part 3 display the area
+
     const triangleArea= (0.5 *base * height);
     console.log(triangleArea)
 
